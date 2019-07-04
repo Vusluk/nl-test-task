@@ -1,0 +1,29 @@
+.root
+  display: flex
+  flex-direction: column
+  background-color: #ffffff
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1)
+  width: 800px
+
+.row
+  display: flex
+  align-items: center
+  height: 50px
+  padding: 0 32px
+
+  & > span
+    white-space: nowrap
+    text-overflow: ellipsis  
+    width: 33%
+
+.header
+  font-size: 18px
+  font-weight: 600
+
+.item
+  border-top: 1px solid #e5e5e5
+  cursor: pointer
+  transition: background-color 150ms
+
+  &:hover
+    background-color: lighten(blue, 48)

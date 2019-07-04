@@ -1,0 +1,81 @@
+{
+  "name": "speech-analytics",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "connected-react-router": "^6.4.0",
+    "history": "^4.9.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-modal": "^3.8.2",
+    "react-redux": "^6.0.1",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.0.0",
+    "eslint": "5.3.0",
+    "eslint-config-airbnb": "17.1.1",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.2",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^3.0.0",
+    "react-hot-loader": "^4.12.1",
+    "style-loader": "^0.23.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "uuid4": "^1.1.4",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-middleware": "^3.7.0",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-hot-middleware": "^2.25.0"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development node ./server.js",
+    "build": "NODE_ENV=production ./node_modules/.bin/webpack"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "./node_modules/.bin/eslint ./src"
+    }
+  },
+  "eslintConfig": {
+    "extends": "airbnb",
+    "env": {
+      "browser": true
+    },
+    "rules": {
+      "comma-dangle": [
+        "error",
+        {
+          "arrays": "always-multiline",
+          "objects": "always-multiline",
+          "imports": "always-multiline",
+          "exports": "always-multiline",
+          "functions": "ignore"
+        }
+      ],
+      "no-underscore-dangle": 0,
+      "no-use-before-define": 0,
+      "import/prefer-default-export": 0,
+      "arrow-parens": 0,
+      "no-console": 0
+    }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  }
+}
