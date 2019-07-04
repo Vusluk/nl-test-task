@@ -4,7 +4,7 @@ import s from './index.styl';
 import { Molecules, Widgets } from '../../../../../Core';
 import { EmployeesList, EmployeeEdit } from '../../../../Organisms';
 
-const Desktop = ({ actions, employees, editorShow, form, positions }) => (
+const Desktop = ({ actions, employees, editorShow, form }) => (
   <div className={s.root}>
     <div className={s.controls}>
       <Molecules.Button onClick={() => actions.editorSwitch(true)}>Добавить</Molecules.Button>
